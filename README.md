@@ -24,15 +24,15 @@ Open the **_output.txt_** file for results
 
 Results table is formatted with the following columns:
 
-**Chromosome** #chromosome of search region from _input.bed_                                                                       
+**Chromosome** #chromosome of searched region from _input.bed_                                                                       
 **Start position (hg19)** #first base of searched region from _input.bed_                                                              
-**End position (hg19)** #last base of search region from _input.bed_                                                                    
+**End position (hg19)** #last base of searched region from _input.bed_                                                                    
 **Region descriptor** #fourth column of _input.bed_                                                                                    
-**Sample** #name of sample being search (i.e., CH01, BRA01, BRE01, COL01, BBC01)                                                         
+**Sample** #name of sample being searched (i.e., CH01, BRA01, BRE01, COL01, BBC01)                                                         
 **Nucleosome peak position (hg19)** #Protection peak position                                                                           
-**Distance from start (bp)** #distance of protection peak from first base of search region                                               
-**Distance from end (bp)** #distance of protection peak from first base of search region                                                 
-**Within or Flanking?** #whether the peak inside the searhed region or is one of the two peaks flanking the searched region             
+**Distance from start (bp)** #distance of protection peak from first base of searched region                                               
+**Distance from end (bp)** #distance of protection peak from last base of searched region                                                 
+**Within or Flanking?** #whether the peak is inside the searhed region or is one of the two peaks flanking the searched region             
 **WPS (mean = 1)** #Adjusted windowed protection score (WPS divided by the mean WPS of the sample (e.g. 0.5 = half mean WPS, 2 = twice mean)                                                                                                                                  
 **Read depth (mean = 1)** #mean coverage of 180 bp around nucleosome protection peak divided by mean coverage of all bases in the sample (e.g. 0.06 = 6% of the mean coverage, 4.5 = 450% of the mean coverage)    
 
@@ -52,7 +52,7 @@ chr1	10000000	10000700	region	BRA01	10000750	750	50	3' flanking	0.64	0.21
 chr1	1000000	1000000	single base	BRA01	999850	-150	-150	5' flanking	1.28	0.18                                                      
 chr1	1000000	1000000	single base	BRA01	1000036	36	36	3' flanking	'n/a'	0.16                                                      
 
-**Note: "n/a" in the WPS column means no peak exists but greather than 370 bp (twice the mode interpeak distance from the CH01 and CA01 comprehnsive nucleosome maps of Snyder et al. (2016)) seperates the two nearest nucleosome protection peaks in this region. Additional points are placed in these regions for users to check if the lack of peak is due either to poor sequencing coverage or broader nucleosome protection.**
+**Note: "n/a" in the WPS column means no peak exists but greather than 370 bp (twice the mode interpeak distance from the CH01 and CA01 comprehnsive nucleosome maps of Snyder et al. (2016)) seperates the two nearest nucleosome protection peaks in this region. Additional points are placed in these regions for users to check if the lack of peak is due either to poor sequencing coverage or broad nucleosome protection.**
 
 Samples include: 
 
